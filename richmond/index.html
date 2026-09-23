@@ -107,6 +107,10 @@ img{display:block;max-width:100%;height:auto}
 .nav-link:hover{color:#fff}
 .footer-link{transition:color 200ms ease}
 .footer-link:hover{color:#fff}
+.wa-float{transition:box-shadow 200ms ease}
+.wa-float:hover{box-shadow:0 8px 28px rgba(37,211,102,.55)}
+.field{transition:border-color 200ms ease}
+.field:focus{border-color:#ac002f}
 .inline-link{color:#ac002f;text-decoration:underline;text-underline-offset:2px}
 #faq details > summary::-webkit-details-marker{display:none}
 #faq details > summary{position:relative;padding-right:36px;list-style:none}
@@ -174,7 +178,7 @@ function gtag(){dataLayer.push(arguments);}
     <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(172,0,47,0.16);border:1px solid rgba(172,0,47,0.35);color:#f0a0b0;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:7px 15px;border-radius:99px;margin-bottom:26px">Richmond · Virginia</div>
     <h1 style="font-family:'Clash Display',Georgia,serif;font-size:clamp(38px,6vw,74px);font-weight:700;color:#fff;line-height:1.03;letter-spacing:-0.02em;margin-bottom:24px;text-wrap:balance">Paid traffic for restaurants in <em style="color:#cc2a50;font-style:normal">Richmond.</em></h1>
     <p style="font-size:clamp(16px,1.6vw,20px);color:rgba(255,255,255,0.62);line-height:1.6;max-width:600px;margin-bottom:38px">Richmond has a James Beard Award semifinalist chef putting Church Hill on the national food map. We help you turn that spotlight into orders on your own channel.</p>
-    <a href="mailto:hello@beatusmidias.com?subject=I%20want%20my%20free%20audit%20-%20Richmond" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px;color:#fff;font-size:15px;font-weight:700;padding:17px 32px;border-radius:4px;text-decoration:none">Get my free audit →</a>
+    <a href="#contact" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px;color:#fff;font-size:15px;font-weight:700;padding:17px 32px;border-radius:4px;text-decoration:none">Get my free audit →</a>
   </div>
 </section>
 
@@ -225,13 +229,128 @@ function gtag(){dataLayer.push(arguments);}
   </div>
 </section>
 
-<section id="contact" style="background:#141414;padding:clamp(56px,7vw,88px) clamp(24px,6vw,80px);text-align:center">
-  <div style="max-width:680px;margin:0 auto">
-    <h2 style="font-family:'Clash Display',Georgia,serif;font-size:clamp(28px,4vw,46px);font-weight:700;color:#fff;letter-spacing:-0.03em;line-height:1.05;margin-bottom:18px;text-wrap:balance">Ready to fill your Richmond restaurant with <em style="color:#cc2a50;font-style:normal">orders?</em></h2>
-    <p style="font-size:16px;color:rgba(255,255,255,0.56);line-height:1.6;margin-bottom:32px">Free audit within 24 hours. No lock-in contract.</p>
-    <a href="mailto:hello@beatusmidias.com?subject=I%20want%20my%20free%20audit%20-%20Richmond" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px;color:#fff;font-size:16px;font-weight:700;padding:17px 34px;border-radius:4px;text-decoration:none">Email us →</a>
+<!-- CONTACT / CTA -->
+<section id="contact" style="background:#141414;padding:clamp(64px,8vw,104px) clamp(24px,6vw,80px)">
+  <div style="max-width:640px;margin:0 auto">
+    <div style="text-align:center;margin-bottom:36px">
+      <h2 style="font-family:'Clash Display',Georgia,serif;font-size:clamp(28px,4vw,46px);font-weight:700;color:#fff;letter-spacing:-0.03em;line-height:1.05;margin-bottom:14px;text-wrap:balance">Ready to fill your Richmond restaurant with <em style="color:#cc2a50;font-style:normal">orders?</em></h2>
+      <p style="font-size:15px;color:rgba(255,255,255,0.56);line-height:1.6">Tell us a bit about your business. Free audit within 24 hours, no lock-in contract.</p>
+    </div>
+    <form id="beatus-lead-form" style="background:#1d1d1d;border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:clamp(24px,4vw,36px);display:flex;flex-direction:column;gap:16px">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <div>
+          <label style="display:block;font-size:12px;font-weight:700;color:rgba(255,255,255,0.56);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em">Name *</label>
+          <input type="text" id="lead-name" required class="field" style="width:100%;background:#141414;border:1.5px solid rgba(255,255,255,0.14);border-radius:6px;padding:11px 13px;color:#fff;font-size:14px;font-family:inherit;outline:none">
+        </div>
+        <div>
+          <label style="display:block;font-size:12px;font-weight:700;color:rgba(255,255,255,0.56);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em">Email *</label>
+          <input type="email" id="lead-email" required class="field" style="width:100%;background:#141414;border:1.5px solid rgba(255,255,255,0.14);border-radius:6px;padding:11px 13px;color:#fff;font-size:14px;font-family:inherit;outline:none">
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <div>
+          <label style="display:block;font-size:12px;font-weight:700;color:rgba(255,255,255,0.56);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em">WhatsApp (optional)</label>
+          <input type="tel" id="lead-whatsapp" class="field" placeholder="+1 555 555 5555" style="width:100%;background:#141414;border:1.5px solid rgba(255,255,255,0.14);border-radius:6px;padding:11px 13px;color:#fff;font-size:14px;font-family:inherit;outline:none">
+        </div>
+        <div>
+          <label style="display:block;font-size:12px;font-weight:700;color:rgba(255,255,255,0.56);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em">Restaurant / business name</label>
+          <input type="text" id="lead-business" class="field" style="width:100%;background:#141414;border:1.5px solid rgba(255,255,255,0.14);border-radius:6px;padding:11px 13px;color:#fff;font-size:14px;font-family:inherit;outline:none">
+        </div>
+      </div>
+      <div>
+        <label style="display:block;font-size:12px;font-weight:700;color:rgba(255,255,255,0.56);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em">City</label>
+        <select id="lead-city" class="field" style="width:100%;background:#141414;border:1.5px solid rgba(255,255,255,0.14);border-radius:6px;padding:11px 13px;color:#fff;font-size:14px;font-family:inherit;outline:none">
+          <option value="">Select your city</option>
+          <option value="Boise, ID">Boise, ID</option>
+          <option value="Tulsa, OK">Tulsa, OK</option>
+          <option value="Richmond, VA">Richmond, VA</option>
+          <option value="Grand Rapids, MI">Grand Rapids, MI</option>
+          <option value="Chattanooga, TN">Chattanooga, TN</option>
+          <option value="Providence, RI">Providence, RI</option>
+          <option value="Other / not listed">Other / not listed</option>
+        </select>
+      </div>
+      <div>
+        <label style="display:block;font-size:12px;font-weight:700;color:rgba(255,255,255,0.56);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em">Which delivery platforms do you use today?</label>
+        <select id="lead-platforms" class="field" style="width:100%;background:#141414;border:1.5px solid rgba(255,255,255,0.14);border-radius:6px;padding:11px 13px;color:#fff;font-size:14px;font-family:inherit;outline:none">
+          <option value="">Select one</option>
+          <option value="None yet">None yet</option>
+          <option value="DoorDash">DoorDash</option>
+          <option value="Uber Eats">Uber Eats</option>
+          <option value="Grubhub">Grubhub</option>
+          <option value="More than one">More than one</option>
+        </select>
+      </div>
+      <div>
+        <label style="display:block;font-size:12px;font-weight:700;color:rgba(255,255,255,0.56);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em">Monthly ad budget</label>
+        <select id="lead-budget" class="field" style="width:100%;background:#141414;border:1.5px solid rgba(255,255,255,0.14);border-radius:6px;padding:11px 13px;color:#fff;font-size:14px;font-family:inherit;outline:none">
+          <option value="">Select a range</option>
+          <option value="Under $500/mo">Under $500/mo</option>
+          <option value="$500-$2,000/mo">$500-$2,000/mo</option>
+          <option value="$2,000-$5,000/mo">$2,000-$5,000/mo</option>
+          <option value="$5,000+/mo">$5,000+/mo</option>
+        </select>
+      </div>
+      <button type="submit" class="btn-primary" style="margin-top:6px;color:#fff;font-size:15px;font-weight:700;padding:15px 28px;border-radius:6px;border:none;cursor:pointer;font-family:inherit">Send on WhatsApp →</button>
+      <p style="text-align:center;font-size:12.5px;color:rgba(255,255,255,0.4);margin:0">or <a href="#" id="lead-email-fallback" style="color:#f0a0b0;text-decoration:underline">send by email instead</a></p>
+    </form>
   </div>
 </section>
+<script>
+(function(){
+  var form = document.getElementById('beatus-lead-form');
+  if (!form) return;
+  var CITY_DEFAULT = 'Richmond, VA';
+  var cityField = document.getElementById('lead-city');
+  if (cityField && CITY_DEFAULT) cityField.value = CITY_DEFAULT;
+
+  function buildMessage(){
+    var name = document.getElementById('lead-name').value.trim();
+    var email = document.getElementById('lead-email').value.trim();
+    var wa = document.getElementById('lead-whatsapp').value.trim();
+    var biz = document.getElementById('lead-business').value.trim();
+    var city = document.getElementById('lead-city').value;
+    var platforms = document.getElementById('lead-platforms').value;
+    var budget = document.getElementById('lead-budget').value;
+    var lines = ['New lead from beatusmidias.com', ''];
+    lines.push('Name: ' + name);
+    lines.push('Email: ' + email);
+    if (wa) lines.push('WhatsApp: ' + wa);
+    if (biz) lines.push('Business: ' + biz);
+    if (city) lines.push('City: ' + city);
+    if (platforms) lines.push('Platforms used: ' + platforms);
+    if (budget) lines.push('Budget: ' + budget);
+    lines.push('Page: ' + window.location.href);
+    return lines.join('\n');
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('lead-name').value.trim();
+    var email = document.getElementById('lead-email').value.trim();
+    if (!name || !email) { form.reportValidity(); return; }
+    var msg = buildMessage();
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({event:'generate_lead'});
+    window.open('https://wa.me/5521975340783?text=' + encodeURIComponent(msg), '_blank');
+  });
+
+  var fallback = document.getElementById('lead-email-fallback');
+  if (fallback) {
+    fallback.addEventListener('click', function(e){
+      e.preventDefault();
+      var name = document.getElementById('lead-name').value.trim();
+      var email = document.getElementById('lead-email').value.trim();
+      if (!name || !email) { form.reportValidity(); return; }
+      var msg = buildMessage();
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({event:'generate_lead'});
+      window.location.href = 'mailto:hello@beatusmidias.com?subject=' + encodeURIComponent('New lead from beatusmidias.com') + '&body=' + encodeURIComponent(msg);
+    });
+  }
+})();
+</script>
+
 
 <footer style="background:#0d0d0d;padding:44px clamp(24px,6vw,80px);border-top:1px solid rgba(255,255,255,0.06)">
   <div style="max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap">
@@ -265,6 +384,23 @@ function gtag(){dataLayer.push(arguments);}
   var a = document.getElementById('bc-aceitar'), r = document.getElementById('bc-recusar');
   if (a) a.addEventListener('click', function(){ decidir('granted'); });
   if (r) r.addEventListener('click', function(){ decidir('denied'); });
+})();
+</script>
+
+<a href="https://wa.me/5521975340783?text=Hi!%20I%27d%20like%20to%20talk%20about%20paid%20traffic%20for%20my%20restaurant." target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp" style="position:fixed;bottom:26px;right:26px;z-index:200;display:flex;align-items:center;gap:10px;background:#25d366;color:#0b3d2e;font-size:14px;font-weight:700;padding:14px 22px;border-radius:99px;box-shadow:0 4px 20px rgba(37,211,102,0.4);text-decoration:none">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.511-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.82 9.82 0 0 1 6.988 2.898 9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892a11.86 11.86 0 0 0 1.587 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg>
+  Chat on WhatsApp
+</a>
+<script>
+(function(){
+  if (window.__beatusConvWa) return; window.__beatusConvWa = true;
+  document.addEventListener('click', function(e){
+    var t = e.target;
+    var a = (t && t.closest) ? t.closest('a[href*="wa.me"],a[href*="api.whatsapp.com"],a[href*="whatsapp.com/send"]') : null;
+    if (!a) return;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({event:'click_whatsapp'});
+  }, true);
 })();
 </script>
 </body>
