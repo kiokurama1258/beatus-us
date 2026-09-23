@@ -291,7 +291,9 @@ function gtag(){dataLayer.push(arguments);}
           <option value="$5,000+/mo">$5,000+/mo</option>
         </select>
       </div>
-      <button type="submit" class="btn-primary" style="margin-top:6px;color:#fff;font-size:15px;font-weight:700;padding:15px 28px;border-radius:6px;border:none;cursor:pointer;font-family:inherit">Send on WhatsApp →</button>
+      <button type="submit" class="btn-primary" style="margin-top:6px;color:#fff;font-size:15px;font-weight:700;padding:15px 28px;border-radius:6px;border:none;cursor:pointer;font-family:inherit">Send request →</button>
+      <button type="button" id="lead-whatsapp-btn" style="background:#25d366;color:#0b3d2e;font-size:14px;font-weight:700;padding:13px 28px;border-radius:6px;border:none;cursor:pointer;font-family:inherit">Send via WhatsApp instead</button>
+      <p id="lead-status" style="text-align:center;font-size:13.5px;margin:0;display:none"></p>
       <p style="text-align:center;font-size:12.5px;color:rgba(255,255,255,0.4);margin:0">or <a href="#" id="lead-email-fallback" style="color:#f0a0b0;text-decoration:underline">send by email instead</a></p>
     </form>
   </div>
@@ -303,49 +305,94 @@ function gtag(){dataLayer.push(arguments);}
   var CITY_DEFAULT = 'Tulsa, OK';
   var cityField = document.getElementById('lead-city');
   if (cityField && CITY_DEFAULT) cityField.value = CITY_DEFAULT;
+  var statusEl = document.getElementById('lead-status');
+  var submitBtn = form.querySelector('button[type="submit"]');
 
-  function buildMessage(){
-    var name = document.getElementById('lead-name').value.trim();
-    var email = document.getElementById('lead-email').value.trim();
-    var wa = document.getElementById('lead-whatsapp').value.trim();
-    var biz = document.getElementById('lead-business').value.trim();
-    var city = document.getElementById('lead-city').value;
-    var platforms = document.getElementById('lead-platforms').value;
-    var budget = document.getElementById('lead-budget').value;
+  function getFields(){
+    return {
+      name: document.getElementById('lead-name').value.trim(),
+      email: document.getElementById('lead-email').value.trim(),
+      whatsapp: document.getElementById('lead-whatsapp').value.trim(),
+      business: document.getElementById('lead-business').value.trim(),
+      city: document.getElementById('lead-city').value,
+      platforms: document.getElementById('lead-platforms').value,
+      budget: document.getElementById('lead-budget').value,
+      page: window.location.href
+    };
+  }
+
+  function buildMessage(f){
     var lines = ['New lead from beatusmidias.com', ''];
-    lines.push('Name: ' + name);
-    lines.push('Email: ' + email);
-    if (wa) lines.push('WhatsApp: ' + wa);
-    if (biz) lines.push('Business: ' + biz);
-    if (city) lines.push('City: ' + city);
-    if (platforms) lines.push('Platforms used: ' + platforms);
-    if (budget) lines.push('Budget: ' + budget);
-    lines.push('Page: ' + window.location.href);
+    lines.push('Name: ' + f.name);
+    lines.push('Email: ' + f.email);
+    if (f.whatsapp) lines.push('WhatsApp: ' + f.whatsapp);
+    if (f.business) lines.push('Business: ' + f.business);
+    if (f.city) lines.push('City: ' + f.city);
+    if (f.platforms) lines.push('Platforms used: ' + f.platforms);
+    if (f.budget) lines.push('Budget: ' + f.budget);
+    lines.push('Page: ' + f.page);
     return lines.join('\n');
+  }
+
+  function showStatus(text, ok){
+    if (!statusEl) return;
+    statusEl.textContent = text;
+    statusEl.style.color = ok ? '#8ef0b0' : '#f0a0a0';
+    statusEl.style.display = 'block';
+  }
+
+  function openWhatsApp(f){
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({event:'generate_lead', lead_channel:'whatsapp'});
+    window.open('https://wa.me/5521975340783?text=' + encodeURIComponent(buildMessage(f)), '_blank');
   }
 
   form.addEventListener('submit', function(e){
     e.preventDefault();
-    var name = document.getElementById('lead-name').value.trim();
-    var email = document.getElementById('lead-email').value.trim();
-    if (!name || !email) { form.reportValidity(); return; }
-    var msg = buildMessage();
+    var f = getFields();
+    if (!f.name || !f.email) { form.reportValidity(); return; }
+    if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Sending...'; }
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({event:'generate_lead'});
-    window.open('https://wa.me/5521975340783?text=' + encodeURIComponent(msg), '_blank');
+    window.dataLayer.push({event:'generate_lead', lead_channel:'form'});
+    fetch('https://secretaria.beatusmidias.com.br/webhook/beatus-us-lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(f)
+    }).then(function(res){
+      if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Send request \u2192'; }
+      if (res.ok) {
+        showStatus("Thanks! We will be in touch within 24h.", true);
+        form.reset();
+        if (cityField && CITY_DEFAULT) cityField.value = CITY_DEFAULT;
+      } else {
+        showStatus('Something went wrong, opening WhatsApp instead...', false);
+        openWhatsApp(f);
+      }
+    }).catch(function(){
+      if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Send request \u2192'; }
+      showStatus('Could not reach our system, opening WhatsApp instead...', false);
+      openWhatsApp(f);
+    });
   });
+
+  var waBtn = document.getElementById('lead-whatsapp-btn');
+  if (waBtn) {
+    waBtn.addEventListener('click', function(){
+      var f = getFields();
+      if (!f.name || !f.email) { form.reportValidity(); return; }
+      openWhatsApp(f);
+    });
+  }
 
   var fallback = document.getElementById('lead-email-fallback');
   if (fallback) {
     fallback.addEventListener('click', function(e){
       e.preventDefault();
-      var name = document.getElementById('lead-name').value.trim();
-      var email = document.getElementById('lead-email').value.trim();
-      if (!name || !email) { form.reportValidity(); return; }
-      var msg = buildMessage();
+      var f = getFields();
+      if (!f.name || !f.email) { form.reportValidity(); return; }
       window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({event:'generate_lead'});
-      window.location.href = 'mailto:hello@beatusmidias.com?subject=' + encodeURIComponent('New lead from beatusmidias.com') + '&body=' + encodeURIComponent(msg);
+      window.dataLayer.push({event:'generate_lead', lead_channel:'email'});
+      window.location.href = 'mailto:hello@beatusmidias.com?subject=' + encodeURIComponent('New lead from beatusmidias.com') + '&body=' + encodeURIComponent(buildMessage(f));
     });
   }
 })();
