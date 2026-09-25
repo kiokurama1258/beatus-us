@@ -151,6 +151,42 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://beatusmidias.com/savannah/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://beatusmidias.com/new-haven/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://beatusmidias.com/charleston/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://beatusmidias.com/milwaukee/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://beatusmidias.com/st-louis/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://beatusmidias.com/sacramento/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://beatusmidias.com/blog/</loc>
     <lastmod>2026-09-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -200,6 +236,18 @@
   </url>
   <url>
     <loc>https://beatusmidias.com/blog/restaurant-marketing-springfield-des-moines-reno/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://beatusmidias.com/blog/james-beard-chefs-savannah-charleston-st-louis/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://beatusmidias.com/blog/restaurant-marketing-new-haven-milwaukee-sacramento/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
