@@ -46,7 +46,35 @@
 - [Restaurant Upselling Online: Raise Average Order Value With Combos and Add-Ons](https://beatusmidias.com/blog/restaurant-upselling/): Restaurant upselling for online orders: combos that feel like a deal, add-ons at the right step of checkout, size upgrades and how AI replies suggest the next item.
 
 ## Dental practices (US)
-- [Dental marketing agency](https://beatusmidias.com/dentists/): Google Ads, Meta Ads and an AI assistant for dental practices; pages for all 50 state capitals
+- [Dental marketing agency](https://beatusmidias.com/dentists/): Google Ads, Meta Ads and an AI assistant for dental practices; pages for all 50 state capitals and the largest US cities
+- [Dental marketing in New York, NY](https://beatusmidias.com/dentists/new-york/)
+- [Dental marketing in Los Angeles, CA](https://beatusmidias.com/dentists/los-angeles/)
+- [Dental marketing in Chicago, IL](https://beatusmidias.com/dentists/chicago/)
+- [Dental marketing in Houston, TX](https://beatusmidias.com/dentists/houston/)
+- [Dental marketing in Philadelphia, PA](https://beatusmidias.com/dentists/philadelphia/)
+- [Dental marketing in San Antonio, TX](https://beatusmidias.com/dentists/san-antonio/)
+- [Dental marketing in San Diego, CA](https://beatusmidias.com/dentists/san-diego/)
+- [Dental marketing in Dallas, TX](https://beatusmidias.com/dentists/dallas/)
+- [Dental marketing in Fort Worth, TX](https://beatusmidias.com/dentists/fort-worth/)
+- [Dental marketing in Jacksonville, FL](https://beatusmidias.com/dentists/jacksonville/)
+- [Dental marketing in San Jose, CA](https://beatusmidias.com/dentists/san-jose/)
+- [Dental marketing in Charlotte, NC](https://beatusmidias.com/dentists/charlotte/)
+- [Dental marketing in San Francisco, CA](https://beatusmidias.com/dentists/san-francisco/)
+- [Dental marketing in Seattle, WA](https://beatusmidias.com/dentists/seattle/)
+- [Dental marketing in El Paso, TX](https://beatusmidias.com/dentists/el-paso/)
+- [Dental marketing in Las Vegas, NV](https://beatusmidias.com/dentists/las-vegas/)
+- [Dental marketing in Detroit, MI](https://beatusmidias.com/dentists/detroit/)
+- [Dental marketing in Louisville, KY](https://beatusmidias.com/dentists/louisville/)
+- [Dental marketing in Portland, OR](https://beatusmidias.com/dentists/portland/)
+- [Dental marketing in Memphis, TN](https://beatusmidias.com/dentists/memphis/)
+- [Dental marketing in Baltimore, MD](https://beatusmidias.com/dentists/baltimore/)
+- [Dental marketing in Milwaukee, WI](https://beatusmidias.com/dentists/milwaukee/)
+- [Dental marketing in Albuquerque, NM](https://beatusmidias.com/dentists/albuquerque/)
+- [Dental marketing in Fresno, CA](https://beatusmidias.com/dentists/fresno/)
+- [Dental marketing in Tucson, AZ](https://beatusmidias.com/dentists/tucson/)
+- [Dental marketing in Kansas City, MO](https://beatusmidias.com/dentists/kansas-city/)
+- [Dental marketing in Mesa, AZ](https://beatusmidias.com/dentists/mesa/)
+- [Dental marketing in Colorado Springs, CO](https://beatusmidias.com/dentists/colorado-springs/)
 - [How to Get More New Patients for Your Dental Practice](https://beatusmidias.com/dentists/blog/how-to-get-more-new-dental-patients/): A practical system to get more new dental patients: search ads for urgent needs, Meta ads for elective care, a fast reply to every inquiry and tracking by booked patient.
 - [Google Ads for Dentists: What to Bid On and How to Measure It](https://beatusmidias.com/dentists/blog/google-ads-for-dentists/): How dentists should run Google Ads: which treatments to target, how to set the area, why negative keywords matter and how to track booked patients instead of clicks.
 - [Facebook and Instagram Ads for Dentists: When They Work](https://beatusmidias.com/dentists/blog/facebook-ads-for-dentists/): When Facebook and Instagram ads work for dental practices, which treatments fit, what creative to use, how to handle health ad rules and how fast to follow up.
@@ -135,6 +163,18 @@
 - [Agência de marketing digital em Viana do Castelo](https://beatusmidias.com/pt/viana-do-castelo/): anúncios, IA e CRM para clínicas e serviços de Viana do Castelo
 - [Agência de marketing digital em Faro](https://beatusmidias.com/pt/faro/): anúncios, IA e CRM para clínicas e serviços de Faro
 - [Agência de marketing digital em Ponta Delgada](https://beatusmidias.com/pt/ponta-delgada/): anúncios, IA e CRM para clínicas e serviços de Ponta Delgada
+- [Marketing para clínicas dentárias em Lisboa](https://beatusmidias.com/pt/clinicas-dentarias-lisboa/)
+- [Marketing para clínicas dentárias no Porto](https://beatusmidias.com/pt/clinicas-dentarias-porto/)
+- [Marketing para clínicas de medicina estética em Lisboa](https://beatusmidias.com/pt/medicina-estetica-lisboa/)
+- [Marketing para clínicas de medicina estética no Porto](https://beatusmidias.com/pt/medicina-estetica-porto/)
+- [Marketing para clínicas de fisioterapia em Lisboa](https://beatusmidias.com/pt/fisioterapia-lisboa/)
+- [Marketing para clínicas de fisioterapia no Porto](https://beatusmidias.com/pt/fisioterapia-porto/)
+- [Marketing para advogados em Lisboa](https://beatusmidias.com/pt/advogados-lisboa/)
+- [Marketing para advogados no Porto](https://beatusmidias.com/pt/advogados-porto/)
+- [Marketing para contabilistas em Lisboa](https://beatusmidias.com/pt/contabilistas-lisboa/)
+- [Marketing para contabilistas no Porto](https://beatusmidias.com/pt/contabilistas-porto/)
+- [Marketing para psicólogos e clínicas de psicologia em Lisboa](https://beatusmidias.com/pt/psicologos-lisboa/)
+- [Marketing para psicólogos e clínicas de psicologia no Porto](https://beatusmidias.com/pt/psicologos-porto/)
 - [Como Anunciar para o Público dos 40 aos 60 Anos em Portugal](https://beatusmidias.com/pt/blog/anunciar-para-o-publico-dos-40-aos-60-anos/): Como fazer anúncios no Facebook, Instagram e Google para quem tem entre 40 e 60 anos em Portugal: mensagem, imagens, canais e o que este público valoriza.
 - [Google Ads para Clínicas e Serviços em Portugal: Guia Prático](https://beatusmidias.com/pt/blog/google-ads-para-clinicas-e-servicos/): Como usar o Google Ads numa clínica ou empresa de serviços em Portugal: pesquisas com intenção, zona certa, palavras-chave negativas e medir marcações.
 - [Anúncios no Facebook e Instagram para Clínicas e Serviços](https://beatusmidias.com/pt/blog/facebook-e-instagram-ads-para-clinicas-e-servicos/): Como fazer anúncios no Facebook e Instagram que geram marcações para clínicas e serviços em Portugal: objetivo, público, criativos reais e resposta rápida.
