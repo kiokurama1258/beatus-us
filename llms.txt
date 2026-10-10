@@ -288,6 +288,10 @@
 - [Métricas de Marketing para Pequenas Empresas: O que Medir e Como Calcular](https://beatusmidias.com/pt/blog/metricas-de-marketing-para-pequenas-empresas/): As métricas de marketing para pequenas empresas que importam: taxa de cliques, custo por clique, taxa de conversão, custo por contacto e custo por cliente novo.
 - [Agenda Cheia sem Faltas: Lista de Espera, Confirmações e Remarcação](https://beatusmidias.com/pt/blog/agenda-cheia-sem-faltas/): Como manter a agenda cheia sem faltas: lista de espera organizada, confirmações que pedem resposta, regras de cancelamento claras e remarcação imediata.
 - [Marketing para Mulheres a partir dos 40: Comunicar com Respeito e sem Estereótipos](https://beatusmidias.com/pt/blog/marketing-para-mulheres-a-partir-dos-40/): Como fazer marketing para mulheres a partir dos 40 anos com respeito: linguagem sem estereótipos, imagens reais, informação clara e nenhuma promessa exagerada.
+- [CRM para Clínicas: Como Organizar Contactos, Marcações e Regressos](https://beatusmidias.com/pt/blog/crm-para-clinicas/): Como um CRM ajuda uma clínica a organizar contactos, marcações, lembretes e regressos de pacientes, com as etapas certas e o cuidado que o RGPD exige.
+
+## Marketing, AI and CRM guides (US)
+- [AI Receptionist for Small Business: What It Does and When It Pays Off](https://beatusmidias.com/blog/ai-receptionist-for-small-business/): What an AI receptionist does for a small business: instant replies, qualifying questions, booking, reminders and handoff to your team, plus what it should never do.
 
 ## Optional
 - [Privacy Policy](https://beatusmidias.com/privacy-policy/)
