@@ -7,6 +7,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/favicon-180.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, follow">
 <title>Dental Marketing in Madison, WI: Ads &amp; AI for Dentists | Beatus Mídias</title>
 <meta name="description" content="Dental marketing for practices in Madison, Wisconsin: Google Ads, Meta Ads and an AI assistant that answers every inquiry in seconds. Free audit, no lock-in.">
 <link rel="canonical" href="https://beatusmidias.com/dentists/madison/">
@@ -258,7 +259,7 @@ a{color:inherit}
 .moeda{position:absolute;left:11px;top:0;width:10px;height:10px;border-radius:50%;background:var(--vinho);box-shadow:0 0 0 4px rgba(172,0,47,.15);opacity:0;transition:transform .55s cubic-bezier(.65,0,.35,1),opacity .3s}
 .ex-lista li{transition:background .35s,padding .35s;border-radius:8px}
 .ex-lista li.ativo{background:#FBF3F5;padding-left:8px;padding-right:8px;margin:0 -8px}
-.ex-total .ok{transition:transform .3s cubic-bezier(.2,1.6,.4,1)}
+.ex-total .ok{transition:transform .3s cubic-bezier(.2,.8,.2,1)}
 .ex-total .ok.carimbo{transform:scale(1.12) rotate(-3deg)}
 
 /* PLATAFORMAS */
@@ -812,12 +813,12 @@ function gtag(){dataLayer.push(arguments);}
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   // count-up after the stats fade in
   var nums=[].slice.call(document.querySelectorAll('[data-conta]'));
-  nums.forEach(function(el){ el.textContent = el.dataset.pre + '0' + el.dataset.pos; });
+  nums.forEach(function(el){ el.textContent = el.dataset.pre + Math.round(.6*Number(el.dataset.conta)) + el.dataset.pos; });
   setTimeout(function(){
     var t0=null, dur=1400;
     function tick(t){
       if(!t0) t0=t; var p=Math.min((t-t0)/dur,1), e=1-Math.pow(1-p,3);
-      nums.forEach(function(el){ el.textContent = el.dataset.pre + Math.round(e*Number(el.dataset.conta)) + el.dataset.pos; });
+      nums.forEach(function(el){ el.textContent = el.dataset.pre + Math.round((.6+.4*e)*Number(el.dataset.conta)) + el.dataset.pos; });
       if(p<1) requestAnimationFrame(tick);
     }
     requestAnimationFrame(tick);
