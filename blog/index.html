@@ -145,8 +145,43 @@ body > .wrap > .post:last-of-type{margin-bottom:72px}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c = null;
+  try { c = localStorage.getItem('beatus_consent'); } catch(e) {}
+  if (c === 'granted') {
+    gtag('consent','default',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});
+  } else {
+    gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied'});
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-586Z8BLT');</script>
+<!-- rastreio-bm -->
+<script src="/assets/rastreio.js"></script>
+<style>
+#beatus-cookies{display:none;position:fixed;right:16px;bottom:16px;z-index:9999;width:min(392px,calc(100vw - 32px));margin:0;background:#1d1d1d;color:#fff;border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:16px 18px;box-shadow:0 12px 32px -12px rgba(0,0,0,.55);font-family:'Satoshi','Segoe UI',system-ui,sans-serif}
+#beatus-cookies p{margin:0 0 12px;max-width:none;font-size:13.5px;line-height:1.5;color:rgba(255,255,255,.82)}
+#beatus-cookies a{color:#f0a0b0;text-decoration:underline}
+#beatus-cookies .bc-btns{display:flex;gap:8px}
+#beatus-cookies button{flex:1;min-height:44px;margin:0;font-family:inherit;font-size:14px;border-radius:6px;cursor:pointer}
+#bc-aceitar{background:#ac002f;color:#fff;border:0;font-weight:700}
+#bc-recusar{background:transparent;color:rgba(255,255,255,.85);border:1.5px solid rgba(255,255,255,.3);font-weight:600}
+#beatus-cookies button:focus-visible{outline:3px solid #e85c7d;outline-offset:2px}
+html.bc-open .wa-float{bottom:calc(var(--bc-h,0px) + 28px)!important}
+  #beatus-cookies{left:0;right:0;bottom:0;width:100%;border-width:1px 0 0;border-radius:14px 14px 0 0;padding:14px 16px calc(14px + env(safe-area-inset-bottom,0px))}
+  html.bc-open .wa-float{bottom:calc(var(--bc-h,0px) + 12px)!important}
+<div id="beatus-cookies" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+  var box=document.getElementById('beatus-cookies'), root=document.documentElement, salvo=null;
+    box.style.display='block'; root.classList.add('bc-open');
+    if(box)box.style.display='none'; root.classList.remove('bc-open');
+</style>
 </head>
 <body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-586Z8BLT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <header class="nav" id="nav">
   <div class="wrap">
     <a href="/" aria-label="Beatus Mídias, home"><img src="/assets/logo-tinta.png" alt="Beatus Mídias" width="600" height="309"></a>
@@ -467,5 +502,35 @@ body > .wrap > .post:last-of-type{margin-bottom:72px}
   <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.511-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.82 9.82 0 0 1 6.988 2.898 9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892a11.86 11.86 0 0 0 1.587 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg>
   Chat on WhatsApp
 </a>
+<!-- Banner de cookies (LGPD) -->
+<div id="beatus-cookies" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+  <p>Usamos cookies para entender como o site é usado. Você escolhe. <a href="https://beatusmidias.com.br/politica-de-privacidade/">Política de Privacidade</a>.</p>
+  <div class="bc-btns">
+    <button id="bc-aceitar" type="button">Aceitar</button>
+    <button id="bc-recusar" type="button">Recusar</button>
+  </div>
+</div>
+<script>
+(function(){
+  var box=document.getElementById('beatus-cookies'), root=document.documentElement, salvo=null;
+  try{salvo=localStorage.getItem('beatus_consent');}catch(e){}
+  function abrir(){
+    if(!box||box.style.display==='block')return;
+    box.style.display='block'; root.classList.add('bc-open');
+    root.style.setProperty('--bc-h',box.offsetHeight+'px');
+    window.removeEventListener('scroll',rolou);
+  }
+  function rolou(){ if((window.scrollY||0)>240) abrir(); }
+  if(!salvo&&box){ window.addEventListener('scroll',rolou,{passive:true}); setTimeout(abrir,6000); }
+  function decidir(v){
+    try{localStorage.setItem('beatus_consent',v);}catch(e){}
+    if(typeof gtag==='function'){var g=(v==='granted')?'granted':'denied';gtag('consent','update',{'ad_storage':g,'ad_user_data':g,'ad_personalization':g,'analytics_storage':g});}
+    if(box)box.style.display='none'; root.classList.remove('bc-open');
+  }
+  var a=document.getElementById('bc-aceitar'), r=document.getElementById('bc-recusar');
+  if(a)a.addEventListener('click',function(){decidir('granted');});
+  if(r)r.addEventListener('click',function(){decidir('denied');});
+})();
+</script>
 </body>
 </html>
