@@ -75,7 +75,7 @@
   w.bmEvento = evento;
 
   // telefone: só dígitos, com o código do país (Meta pede sem +; o GA4 e o Google Ads recebem a versão com +)
-  function ddi() { return host === "beatusmidias.com" ? (location.pathname.indexOf("/pt/") === 0 ? "351" : "1") : "55"; }
+  function ddi() { if (host !== "beatusmidias.com") return "55"; var p = location.pathname; return p.indexOf("/pt/") === 0 ? "351" : p.indexOf("/mx/") === 0 ? "52" : "1"; }
   function telefone(t) {
     var n = String(t || "").replace(/\D/g, "").replace(/^0+/, "");
     if (!n) return "";
@@ -83,6 +83,7 @@
     if (c === "55" && (n.length === 10 || n.length === 11)) n = "55" + n;
     else if (c === "1" && n.length === 10) n = "1" + n;
     else if (c === "351" && n.length === 9) n = "351" + n;
+    else if (c === "52" && n.length === 10) n = "52" + n;
     return n;
   }
   function primeiroNome(s) { return String(s || "").trim().split(/\s+/)[0].toLowerCase(); }
